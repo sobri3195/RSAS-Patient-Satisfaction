@@ -443,11 +443,11 @@ export function SettingsPage() {
               <>
                 <img className="logo-preview" src={settings.logo} alt="Pratinjau logo lokal" />
                 <button onClick={() => setSettings({ ...settings, logo: '' })}>
-                  Gunakan monogram
+                  Gunakan logo bawaan
                 </button>
               </>
             ) : (
-              <p>Monogram RSAS aktif. Tidak ada logo resmi buatan.</p>
+              <p>Logo bawaan RSAU Prof. dr. Abdulrachman Saleh aktif.</p>
             )}
           </div>
           <label className="full">
