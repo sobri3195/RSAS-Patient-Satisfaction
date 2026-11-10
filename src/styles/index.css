@@ -290,7 +290,8 @@ summary:focus-visible {
 }
 .brand img {
   width: 43px;
-  height: 47px;
+  height: 43px;
+  flex-shrink: 0;
   object-fit: contain;
 }
 .brand.light strong {

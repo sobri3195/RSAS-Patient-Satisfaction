@@ -7,13 +7,12 @@ export function Brand({ light = false }: { light?: boolean }) {
   const { data } = useStore();
   return (
     <Link to="/" className={`brand ${light ? 'light' : ''}`} title="Kembali ke beranda RSAS">
-      {data.settings.logo ? (
-        <img src={data.settings.logo} alt="Logo RSAS unggahan lokal" />
-      ) : (
-        <span className="monogram" aria-hidden="true">
-          RS<span>AS</span>
-        </span>
-      )}
+      <img
+        src={data.settings.logo || '/rsas-logo.webp'}
+        alt={
+          data.settings.logo ? 'Logo RSAS unggahan lokal' : 'Logo RSAU Prof. dr. Abdulrachman Saleh'
+        }
+      />
       <span>
         <strong>
           RSAS<span className="gold"> · </span>SATISFACTION
